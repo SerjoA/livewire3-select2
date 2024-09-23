@@ -36,8 +36,8 @@
     },
     "autoload": {
         "psr-4": {
-            "SerjoAgronov\\LivewireSelect2\\": "src/",
-            "SerjoAgronov\\LivewireSelect2\\Database\\Factories\\": "database/factories/"
+            "JackBayliss\\LivewireSelect2\\": "src/",
+            "JackBayliss\\LivewireSelect2\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
@@ -74,10 +74,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "SerjoAgronov\\LivewireSelect2\\LivewireSelect2ServiceProvider"
+                "JackBayliss\\LivewireSelect2\\LivewireSelect2ServiceProvider"
             ],
             "aliases": {
-                "LivewireSelect2": "SerjoAgronov\\LivewireSelect2\\Facades\\LivewireSelect2"
+                "LivewireSelect2": "JackBayliss\\LivewireSelect2\\Facades\\LivewireSelect2"
             }
         }
     },
