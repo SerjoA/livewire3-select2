@@ -1,19 +1,19 @@
 {
-    "name": "jackbayliss/livewire-select2",
-    "description": "Simple to use Livewire component for Select2",
+    "name": "serjoagronov/livewire3-select2",
+    "description": "Simple to use Livewire3 component for Select2",
     "keywords": [
         "JackBayliss",
         "laravel",
-        "livewire-select2"
+        "livewire3-select2"
     ],
-    "homepage": "https://github.com/jackbayliss/livewire-select2",
+    "homepage": "https://github.com/serjoa/livewire3-select2",
     "license": "MIT",
     "authors": [
         {
             "name": "Jack Bayliss",
             "email": "jjbdev@proton.me",
             "role": "Developer"
-        }
+        }        
     ],
     "require": {
         "php": "^8.2",
@@ -36,8 +36,8 @@
     },
     "autoload": {
         "psr-4": {
-            "JackBayliss\\LivewireSelect2\\": "src/",
-            "JackBayliss\\LivewireSelect2\\Database\\Factories\\": "database/factories/"
+            "SerjoAgronov\\LivewireSelect2\\": "src/",
+            "SerjoAgronov\\LivewireSelect2\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
@@ -74,10 +74,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "JackBayliss\\LivewireSelect2\\LivewireSelect2ServiceProvider"
+                "SerjoAgronov\\LivewireSelect2\\LivewireSelect2ServiceProvider"
             ],
             "aliases": {
-                "LivewireSelect2": "JackBayliss\\LivewireSelect2\\Facades\\LivewireSelect2"
+                "LivewireSelect2": "SerjoAgronov\\LivewireSelect2\\Facades\\LivewireSelect2"
             }
         }
     },
