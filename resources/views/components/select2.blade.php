@@ -2,6 +2,7 @@
 
 <div wire:ignore>
     <select class="select2-{{$this->id}} {{$this->class ?? ''}}" @if($this->multiple) multiple="multiple" @endif >
+         <option value="" selected ></option>
         @foreach($this->options as $key => $option)
             <option value="{{$key}}" @if($key == $this->model) selected @endif>{{$option}}</option>
         @endforeach
@@ -18,7 +19,10 @@
         })
 
         function prepareSelect2(){
-            $('.select2-{{$this->id}}').select2().on('change', function(e) {
+            $('.select2-{{$this->id}}').select2({
+               allowClear: true,
+               placeholder: 'Select an option',
+            }).on('change', function(e) {
                 var data = $(this).select2("val")
                 @this.select2Change(data)
             })
